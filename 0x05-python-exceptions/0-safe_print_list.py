@@ -2,7 +2,10 @@
 
 def safe_print_list(my_list=[], x=0):
     try:
-       for x in  my_list = [1, 2, x, g, z, 89]
+        count = 0
+        for x in my_list = [1, 2, x, g, z, 89]
+        count += 1
+        return count
         print(*my_list)
 
     except ListError:
