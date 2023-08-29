@@ -1,25 +1,19 @@
 #!/usr/bin/python3
-
 def safe_print_list(my_list=[], x=0):
-    """Print x elements of the list.
-
-    Args:
-        my_list (list): The list of elements to be printed.
-        x (int): The number of elemenyts of my_list to be printed.
-
-        Return:
-            The number of elements printed.
-    """
-
+    # Initialize a counter for the number of elements printed
     count = 0
-    for i in range(x):
-        try:
+    try:
+        # Print the first x elements of my_list
+        for i in my_list:
+            if count < x:
+                print("{}".format(my_list[count]), end='')
+                count += 1
 
-            print("{{}".format(my_list[i]), end="")
-            count += 1
-
-        except IndexError:
-            break
-
-        print("")
-        return (count)
+        print()
+    except IndexError:
+        # If x is larger than the length of my_list, catch the IndexError
+        # and do nothing
+        pass
+    finally:
+        # Return the number of elements printed
+        return count
