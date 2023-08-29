@@ -1,12 +1,21 @@
 #!/usr/bin/python3
 
 def safe_print_list(my_list=[], x=0):
-    try:
-        count = 0
-        for x in my_list = [1, 2, x, g, z, 89]
-        count += 1
-        return count
-        print("safe_print_list", {my_list(x)}!")
+    # Args:
+    # mylist (list): The list of elements to print.
+    # x (int): The number of elements of my_list to print.
 
-    except ListError:
-        print("Sorry that element does not exist in the list")
+    try:
+        # Initialize a counter for the number of elemnts to be printed
+        count = 0
+        for i in my_list:
+            if count < x:
+
+                print("{}". format(my_list[count], end='')
+                count += 1
+        print()
+     except IndexError:
+        pass
+        finally:
+        # Return the number of elements printed
+        return count
