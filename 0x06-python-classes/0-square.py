@@ -2,4 +2,4 @@
 
 class Square:
     def __init__(self, square):
-        self.square = square
+        
