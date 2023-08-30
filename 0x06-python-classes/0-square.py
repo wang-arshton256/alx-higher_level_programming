@@ -5,6 +5,6 @@ This module contains a class which defines a square
 """
 
 
-class Square:
+class square:
 
     pass
