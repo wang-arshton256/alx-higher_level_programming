@@ -9,26 +9,26 @@ integer and it is greate than or equal to 0.
 
 
 class Square:
+    """Defines a square
+
+    Attributes: sie(int)
     """
-    Represent a square
 
-    Attributes:
-      size: size
+
+def __init__(self, size=0):
     """
-    def __init__(self, size=0):
-        """
-        Init object
+    Init object
 
-        Args:
-          size: size
-        Raise:
-          TypeError: if size not an int
-          ValueError: if size less than 1
-        """
-        self.__size = size
+    Args: size(int)
+    Raise:
+        TypeError: if size is nio==ot an int.
+        ValueError: if size is less than 1.
+    """
 
-        if not isinstance(size, int):
+    if type(size) is int:
+        if size >= 0:
+            self.__size = size
+        else:
             raise TypeError("size must be an integer")
-        if size < 0:
-            raise ValueError("size must >= 0")
-        except (ValueError) as size:
+    else:
+        raise ValueError("size must be >= 0")
