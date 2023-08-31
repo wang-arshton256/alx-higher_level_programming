@@ -29,6 +29,6 @@ def __init__(self, size=0):
         if size >= 0:
             self.__size__ = size
         else:
-            raize ValueError("size must be >+ 0")
+            raize ValueError("size must be >= 0")
         else:
             raize TypeError("size must be an interger")
