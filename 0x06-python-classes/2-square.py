@@ -25,7 +25,7 @@ def __init__(self, size=0):
         ValueError: if size is less than 1.
     """
 
-    self.size = size
+    self._size = size
     if not isinstance(size(int)):
         raise TypeError('size must be an integer')
     elif size < 0:
