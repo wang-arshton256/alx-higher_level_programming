@@ -1,34 +1,29 @@
 #!/usr/bin/python3
-"""This is a square mdule.
-
-THis module contains aclass Square which defines a square
-and initialises its size and verifies that the size is an
-integer and it is greate than or equal to 0.
-
+"""
+Define a class Square
 """
 
 
 class Square:
-    """Defines a square
-
-    Attributes: sie(int)
     """
+    Represent a square
 
-
-def __init__(self, size=0):
+    Attributes:
+      size: size
     """
-    Init object
+    def __init__(self, size=0):
+        """
+        Init object
 
-    Args: size(int)
-    Raise:
-        TypeError: if size is nio==ot an int.
-        ValueError: if size is less than 1.
-    """
+        Args:
+          size: size
+        Raise:
+          TypeError: if size not an int
+          ValueError: if size less than 1
+        """
+        self.__size = size
 
-    if type(size) is int:
-        if size >= 0:
-            self.__size__ = size
-        else:
-            raize ValueError("size must be >= 0")
-        else:
-            raize TypeError("size must be an interger")
+        if not isinstance(size, int):
+            raise TypeError("size must be an integer")
+        if size < 0:
+            raise ValueError("size must >= 0")
