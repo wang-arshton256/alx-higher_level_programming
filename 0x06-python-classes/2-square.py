@@ -32,4 +32,3 @@ class Square:
         if size < 0:
             raise ValueError("size must >= 0")
         except (ValueError) as size:
-            print("Errro: {0}".format(size))
