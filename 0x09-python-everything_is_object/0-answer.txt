@@ -1,0 +1,2 @@
+"""A function to get the type of an object"""
+id
